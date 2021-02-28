@@ -7,6 +7,7 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey={{ map_api.KAKAO_JAVASCRIPT_KEY  }}&libraries=services"></script>
     <script src="/static/js/common.js"></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
                     <ul class="nav navbar-nav">
                         
                         {% from "macro/link.html" import link %}
-                        {{ link( '/admin/apts' , "ADMIN" , req_path ) }}
+                        {{ link( '/admin/apts' , "Main" , req_path ) }}
                        
 
                     </ul> 
